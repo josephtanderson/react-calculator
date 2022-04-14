@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NumButton from './NumButton';
 import OperatorButton from './OperatorButton';
 import './CalcButtons.css'
 
-class CalcButtons extends Component {
-
-    render () {
+const CalcButtons = (props) => {
         const { getNums, getOperators, getDelete, getEquals, getClear, getSq, getSqRt } = this.props;
         return (
             <div className="button-grid">
@@ -32,6 +30,5 @@ class CalcButtons extends Component {
             </div>
         )
     }
-}
 
 export default CalcButtons
