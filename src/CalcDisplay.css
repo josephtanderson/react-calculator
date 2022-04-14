@@ -1,0 +1,21 @@
+.output {
+    min-height: 125px;
+    grid-column: 1 /-1;
+    background-color: var(--output-bg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .small-output {
+    color: #ddd;
+    font-size: 1.25rem;
+}
+.output .big-output {
+    min-height: 3.5rem;
+    font-size: 3.75rem;
+    color: #fff;
+}

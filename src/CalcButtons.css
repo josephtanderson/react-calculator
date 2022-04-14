@@ -1,0 +1,44 @@
+*{
+    --btn-bg: #333333;
+    --btn-hover-bg: #33333344;
+    --btn-font-color: #ffffff;
+    --hover-btn-font-color: #000000;
+    --btn-click-bg: #75757544;
+    --click-btn-font-color: #000000;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.button-grid {
+    display: grid;
+    width: fit-content;
+    justify-content: center;
+    align-content: start;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5,100px);
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline:none;
+    color:var(--btn-font-color);
+    border-width: 6px;
+    border-style: solid;
+    border-top-color: #00000044;
+    border-right-color: #00000088;
+    border-bottom-color: #00000022;
+    border-left-color: #00000066;
+    background-color: var(--btn-bg);
+}
+
+button:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--hover-btn-font-color);
+}
+
+button:active {
+    background-color: var(--btn-click-bg);
+    color: var(--click-btn-font-color);
+}
