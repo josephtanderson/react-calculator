@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NumButton extends Component {
-      render() {
-        return (
-            <button onClick={this.props.onButtonClick}>{this.props.number}</button>
-        );
-      }
+const NumButton = (props) => {
+  return (
+      <button onClick={props.onButtonClick}>{props.number}</button>
+  );
 }
 
 export default NumButton

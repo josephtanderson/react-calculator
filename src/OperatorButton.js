@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
 
-class OperatorButton extends Component {
-      render() {
-        return (
-            <button onClick={this.props.onButtonClick}>{this.props.operator}</button>
-        );
-      }
+import React from 'react';
+
+const OperatorButton = (props) => {
+  return (
+      <button onClick={props.onButtonClick}>{props.operator}</button>
+  );
 }
 
 export default OperatorButton
